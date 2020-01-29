@@ -1,0 +1,45 @@
+public final class Main {
+
+	public static void main(String[] args) {
+		
+		Ferreteria ferreteria = new Ferreteria();
+		
+		// 
+		Producto varilla = new Producto("Varilla de acero", "2mm x 2mm de sección y 1m de largo", 1500);
+		varilla.setCantidad(100);
+		ferreteria.setProducto(varilla);
+		
+		Producto tuerca = new Producto("Tuerca milimétrica", "20mm de diámetro",40);
+		tuerca.setCantidad(200);
+		ferreteria.setProducto(tuerca);
+		
+		Producto lija = new Producto("Lija", "Sin descripción",180);
+		lija.setCantidad(50);
+		ferreteria.setProducto(lija);
+		
+		Producto flexible = new Producto("Flexible", "0.7 metros de largo",600);
+		flexible.setCantidad(40);
+		ferreteria.setProducto(flexible);
+		
+		//1-Calculamos el ingreso mensual
+		System.out.println("El Ingreso mensual es de: " + ferreteria.CalcularIngresoMensual());
+
+		//2- Ventas en porcentaje
+		ferreteria.CalcularPorcentaje(80);
+		ferreteria.CalcularPorcentaje(90);
+		ferreteria.CalcularPorcentaje(100);
+		ferreteria.CalcularPorcentaje(110);
+		ferreteria.CalcularPorcentaje(120);
+		
+		
+		//3- Proyeccion de stock
+		System.out.println("El stock para 30 dias es: ");
+		ferreteria.CalcularStock(30);
+		System.out.println("El stock para 40 dias es: ");
+		ferreteria.CalcularStock(40);
+		System.out.println("El stock para 60 dias es: ");
+		ferreteria.CalcularStock(60);
+
+	}
+
+}

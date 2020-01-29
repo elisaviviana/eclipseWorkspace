@@ -1,0 +1,29 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hola primer mundo");	
+		
+		Integer unNumeroA=1670;
+		Double unNumeroB = 10.7;
+		String unaCadenaDeTexto="Todo bien?";
+		
+		System.out.println(unNumeroA);
+		System.out.println(unNumeroB);
+		System.out.println(unaCadenaDeTexto);
+		
+		System.out.println(unNumeroA+unNumeroB);
+		System.out.println(unNumeroA-unNumeroB);
+		
+		public boolean menorQueElSegundo(Integer unNumeroA, Integer unNumeroB) {
+			if(unNumeroA < unNumeroB) {
+				return True;
+			}else {
+				return False;
+			}
+			
+		}
+	}
+
+}

@@ -1,0 +1,10 @@
+package misClases;
+
+public class Cuenta {
+	private Integer numeroCuenta;
+	private Double saldo;
+	private Cliente nombre;
+	
+	
+
+}

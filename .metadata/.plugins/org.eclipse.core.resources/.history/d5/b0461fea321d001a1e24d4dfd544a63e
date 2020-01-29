@@ -1,0 +1,38 @@
+package quinielaApodo;
+
+import java.util.HashMap;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Map<Integer,String> nquiniela = new HashMap<Integer, String>();
+//		HashMap<Integer,String> hashMapEdad = new HashMap<Integer,String>();
+
+
+	nquiniela.put (0,"Huevos");
+	nquiniela.put (1,"Agua");
+	nquiniela.put (2,"Escopeta");
+	nquiniela.put(3,"Caballo");
+	nquiniela.put(4,"Dentista");
+	nquiniela.put(5,"Llamas");
+
+	for(Integer clave : nquiniela.keySet()) {
+	String valor = nquiniela.get(clave);
+	System.out.println(valor);
+	}
+
+
+	Map<String, String> apodo = new HashMap<String,String>();
+	apodo.put("Juan","Juancho,Fisura, RicardoFord");
+	apodo.put("Miguel","Night Watch, Bruce, Wayne, Pati Corti");
+	apodo.put("Maria","Wonder Woman, Mary, Roberto");
+	apodo.put("Lucas","Luks, Jorge, Chorch");
+
+	for(String clave: apodo.keySet()) {
+	System.out.println("Para " + apodo.get(clave) + " ") ;
+	}
+
+	}
+
+}

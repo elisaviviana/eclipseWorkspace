@@ -1,0 +1,18 @@
+package perro;
+
+public class perro {
+	private String nombre;
+	private String raza;
+	//constructor
+	public Perro() {
+		//constructor vacio
+	}
+	//Getters & Setters
+	public void setNombre(String nuevoNombre) {
+		nombre = nuevoNombre;
+	}
+	//si tuviese el mismo nombre, se puede hacer de esta forma
+	public void setRaza(String raza) {
+		this.raza = raza;
+	}
+}

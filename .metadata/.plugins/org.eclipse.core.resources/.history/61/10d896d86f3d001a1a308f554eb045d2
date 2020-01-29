@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<link rel="stylesheet" type="text/css" media="all"
+      href="../../style.css" th:href="@{/style.css}" />
+</head>
+<body>
+	<header th:fragment="header" class="bg-dark">
+
+	<nav class="menu">
+	<ul>
+	<li><a href="#">Sobre Mi</a></li>
+	<li><a href="#">Blog</a></li>
+	<li><a href="#">Contacto</a></li>
+	</ul>
+	</nav>
+	</header>
+
+<p>hola</p>
+</body>
+</html>

@@ -1,0 +1,49 @@
+
+public class Producto {
+	
+	//atributos
+	private String nombre;
+	private String descripcion;
+	private Integer precioUnitario;
+	private Integer cantidad;
+	//Getts and Setters
+	
+	public Integer getCantidad() {
+		return cantidad;
+	}
+
+	public void setCantidad(Integer cantidad) {
+		this.cantidad = cantidad;
+	}
+	public String getNombre() {
+		return nombre;
+	}
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public Integer getPrecioUnitario() {
+		return precioUnitario;
+	}
+	public void setPrecioUnitario(Integer precioUnitario) {
+		this.precioUnitario = precioUnitario;
+	}
+	public void setDescripcion(String desc) {
+		this.descripcion = desc;
+	}
+	public void setNombre(String nom) {
+		this.nombre = nom;
+		
+	}
+	
+	
+	
+	public Producto(String nom, String desc, Integer precio) {
+		this.nombre = nom;
+		this.descripcion = desc;
+		this.precioUnitario = precio;
+	}
+
+
+}

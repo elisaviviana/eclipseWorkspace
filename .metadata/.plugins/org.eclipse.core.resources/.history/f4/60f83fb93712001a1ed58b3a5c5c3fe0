@@ -1,0 +1,27 @@
+package perro;
+
+public class perro {
+	private String nombre;
+	private String raza;
+	//constructor
+	public Perro() {
+		//constructor vacio
+	}
+	//Getters & Setters
+	public void setNombre(String nuevoNombre) {
+		nombre = nuevoNombre;
+	}
+	public String getNombre( ) {
+		return this.nombre;
+	}
+	//si tuviese el mismo nombre, se puede hacer de esta forma
+	//void es cuando la funcion no retorna nada
+	
+	public void setRaza(String raza) {
+		this.raza = raza;
+	}
+	public String getRaza() {
+		return this.raza;
+	}
+	
+}

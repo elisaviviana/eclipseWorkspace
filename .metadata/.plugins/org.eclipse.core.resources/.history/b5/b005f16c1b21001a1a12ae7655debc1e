@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+
+public class Ferreteria {
+	//Atributos
+	ArrayList<Producto> productos = new ArrayList<>();
+	//setters and getters
+	public ArrayList<Producto> getProductos() {
+		return productos;
+	}
+	public void setProducto(Producto p) {
+		this.productos.add(p);
+	}
+	//metodos
+	public Integer CalcularIngresoMensual() {
+		Integer precioXcantidad = 0;
+		Integer ingreso = 0;
+		for(Producto p: productos) {
+			precioXcantidad = p.getPrecioUnitario() * p.getCantidad();
+			ingreso = ingreso + precioXcantidad;
+//			System.out.println("el producto es "+ p.getNombre());
+		}
+		return ingreso;
+	}
+	public void CalcularPorcentaje (Integer porcentaje) {
+		System.out.println("Porcentaje "+ porcentaje+ " de "+ CalcularIngresoMensual()* porcentaje /100 );
+	}
+	public void CalcularStock (Integer dias) {
+		//for each en java
+		for(Producto p: productos) {
+//			System.out.println("Para dentro de " + dias+ " dias son necesario "+ p.getCantidad()+" "+ (( p.getCantidad()/30 )* dias)+ " de "+ p.getNombre());
+			System.out.println("Para dentro de " + dias+ " dias son necesario "+ (( p.getCantidad()/30 )* dias)+ " de "+ p.getNombre());
+
+		}
+	}
+	
+	
+}

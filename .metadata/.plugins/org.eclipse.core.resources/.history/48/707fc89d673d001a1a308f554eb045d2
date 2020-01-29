@@ -1,0 +1,9 @@
+@charset "UTF-8";
+body {
+/*     background: #eaeaea;
+ */        background: green;
+    font-size: 1rem;
+    color: #666;
+    font-weight: 300;
+    font-family: Titillium,Arial,sans-serif;
+}

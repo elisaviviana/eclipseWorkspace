@@ -1,0 +1,15 @@
+
+	<header th:fragment="header" class="bg-dark">
+
+	<nav class="menu">
+	<ul>
+	<li><a href="/">SOBRE MI</a>|<a href="miblog">BLOG</a></li>
+	<li><a href="porfolio">PORFOLIO</a></li>
+	<li><a href="">CONTACTO</a></li>
+	</ul>
+	</nav>
+	</header>
+
+	<footer th:fragment="footer" class="bg-dark">
+<h4>DANIELA GODDARD | 2020</h4>
+</footer>

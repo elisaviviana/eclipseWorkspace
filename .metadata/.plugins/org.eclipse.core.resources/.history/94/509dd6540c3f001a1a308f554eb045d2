@@ -1,0 +1,7 @@
+package servicios.impl;
+
+import servicios.MiInterfazServicio;
+
+public class ServicioAImpl implements MiInterfazServicio {
+
+}

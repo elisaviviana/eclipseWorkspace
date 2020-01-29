@@ -1,0 +1,8 @@
+package com.tiendazapatos.zapatosspring.services;
+
+import java.awt.List;
+
+public interface InterfaceServices {
+	public List Entities generarLista();
+	
+}
